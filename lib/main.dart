@@ -7,8 +7,8 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.red,
         appBar: AppBar(
-          title: Text('Dicee'),
-          backgroundColor: Colors.red,
+          title: Text('Dicee Flutter 2.0 update'),
+          backgroundColor: Colors.blue,
         ),
         body: DicePage(),
       ),
@@ -38,7 +38,7 @@ class _DicePageState extends State<DicePage> {
       child: Row(
         children: <Widget>[
           Expanded(
-            child: FlatButton(
+            child: TextButton(
               onPressed: () {
                 randomDice();
               },
@@ -46,7 +46,7 @@ class _DicePageState extends State<DicePage> {
             ),
           ),
           Expanded(
-            child: FlatButton(
+            child: TextButton(
               onPressed: () {
                 randomDice();
               },
